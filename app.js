@@ -34,4 +34,6 @@
 
     // console.log(chalk.green('Exito'))
 
-    
+// Modulos Globales de npm
+// Intsalación de nodemon 
+
