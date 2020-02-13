@@ -1,0 +1,22 @@
+{
+  "name": "notas",
+  "version": "1.0.0",
+  "description": "Notas-App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DD-RR/Notas.git"
+  },
+  "author": "Diego Rodríguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DD-RR/Notas/issues"
+  },
+  "homepage": "https://github.com/DD-RR/Notas#readme",
+  "dependencies": {
+    "validator": "^12.2.0"
+  }
+}

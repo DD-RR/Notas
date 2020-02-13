@@ -7,12 +7,16 @@
 
 // Clase importanto nuestros Propios archivos, desde un archivo diferente.
 //Aquí estan todos los archivos exportados.
+
+const validator = require('validator')
 const getNota = require('./Notas')
 
 
 const msg = getNota ()
  
 console.log(msg)
-
-
-
+console.log(validator.isEmail('algo@algo.com'))
+console.log(validator.isEmail('algo.com'))
+console.log(validator.isEmail('algo@'))
+console.log(validator.isURL('https://meat.io'))
+console.log(validator.isURL('https/meat.io'))
