@@ -1,3 +1,10 @@
+/*
+    
+    NOTA IMPORTANTE: Cada que se inicia un nuevo proyecto se tiene que exportar el const variable = require ('variable') para 
+    poder usar los nuevo s modulos de NodeJS
+*/
+
+
 // Clase Creando Archivos y escribiendo en ellos
 // const fs = require('fs')
 
@@ -6,12 +13,12 @@
 // fs.appendFileSync('notas.txt', ' Fui creado en la Capacitación de NodeJS')
 
 //Aquí estan todos los archivos exportados.
-const getNota = require('./Notas')
+// const getNota = require('./Notas')
 
 // Clase importanto nuestros Propios archivos, desde un archivo diferente.
-    const msg = getNota ()
+//     const msg = getNota ()
     
-    console.log(msg)
+//     console.log(msg)
 
 // Clase de validaciones
     // const validator = require('validator')
@@ -23,6 +30,8 @@ const getNota = require('./Notas')
     // console.log(validator.isURL('https/meat.io'))
 
 // Clase de colores en el texto 
-    const chalk = require('chalk')
+    // const chalk = require('chalk')
 
-    console.log(chalk.green('Exito'))
+    // console.log(chalk.green('Exito'))
+
+    
