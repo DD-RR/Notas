@@ -13,3 +13,6 @@ const getNota = require('./Notas')
 const msg = getNota ()
  
 console.log(msg)
+
+
+

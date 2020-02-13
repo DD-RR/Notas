@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 Mi creador es Diego Rodríguez.  Fui creado en la Capacitación de NodeJS Fui creado en la Capacitación de NodeJS Fui creado en la Capacitación de NodeJS Fui creado en la Capacitación de NodeJS Fui creado en la Capacitación de NodeJS
+=======
+Mi creador es Diego Rodríguez.  Fui creado en la Capacitación de NodeJS 
+>>>>>>> 7b2797d51d77298bd0e506b204bdf1f81824c4db
+ Fui creado en la Capacitación de NodeJS
