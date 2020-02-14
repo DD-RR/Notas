@@ -1,1 +1,0 @@
-Mi creador es Diego Rodríguez.  Fui creado en la Capacitación de NodeJS 

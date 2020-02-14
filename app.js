@@ -41,14 +41,14 @@
 
 const chalk = require('chalk')
 const yargs = require('yargs')
-const getNotes = require('./Notas')
+const nota = require('./Notas')
 
 // Configurando Manualmente la versión
 yargs.version('1.1.0')
 
 //Notas Agregar, Eliminar, leer, enumerar 
 
-// Creando el comando aggregar
+// Creando el comando aggregar 
 
 yargs.command({
     command: 'add',
@@ -65,9 +65,8 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: function (argv) {
-         console.log('Titulo: ', argv.title);
-         console.log('Cuerpo de la nota: ', argv.body);
+    handler (argv) {
+        nota.addNotas(argv.title, argv.body)
     }
 })
 
@@ -77,8 +76,15 @@ yargs.command({
 yargs.command({
     command: 'remove',
     describe: 'Eliminando Notas',
-    handler: function () {
-        console.log('Eliminando Notas');
+    builder: {
+        title: {
+            describe: 'Titulo de la Nota',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler (argv) {
+        nota.removeNotas(argv.title)
     }
 })
 
@@ -87,8 +93,15 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Leyendo las notas',
-    handler: function () {
-        console.log('Leyendo notas')
+    builder: {
+        title: {
+            describe: 'Titulo Nota',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler (argv) {
+        nota.readNota(argv.title)
     }
 })
 
@@ -97,8 +110,8 @@ yargs.command({
 yargs.command({
     command: 'list',
     describe: 'Listando las notas',
-    handler: function () {
-        console.log('Listando todas las notas')
+    handler () {
+        nota.listNotas()
     }
 })
 
